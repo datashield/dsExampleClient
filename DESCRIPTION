@@ -1,0 +1,23 @@
+Package: dsExampleClient
+Title: Provide an example of DataSHIELD Client-Side package
+Version: 1.0.0
+Authors@R: 
+    person("Tim", "Cadman", , "t.j.cadman@umcg.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7682-5645"))
+Description: A complete DataSHIELD client-side package containing one exported function as an example how to create a DataSHIELD package.
+License: LGPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    DSI,
+    cli
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0), 
+    DSLite, 
+    devtools, 
+    dsBase
+Config/testthat/edition: 3
+VignetteBuilder: knitr
