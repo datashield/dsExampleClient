@@ -23,6 +23,7 @@ ds.funLevels <- function(x=NULL, fun_message=NULL, datasources=NULL) {
     datasources <- datashield.connections_find()
   }
 
+  .check_datasources(datasources)
   .check_args(x, fun_message)
   fun_message_no_spaces <- gsub(" ", "", fun_message)
   cally <- call("funLevelsDS", x, fun_message_no_spaces)
